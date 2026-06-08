@@ -1,0 +1,21 @@
+DATA QUALITY REPORT
+
+Datasets Loaded: 10
+
+Validation Results:
+
+✓ All CSV files loaded successfully
+
+✓ AMFI code validation completed
+
+✓ No missing scheme codes
+
+Observations:
+
+- fund_master contains mutual fund scheme details
+- nav_history contains historical NAV data
+- Missing values checked during ingestion
+- Duplicate records checked during ingestion
+
+Status:
+PASS

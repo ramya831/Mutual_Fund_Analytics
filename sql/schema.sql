@@ -1,58 +1,115 @@
--- Create Fund Master Table
-
-CREATE TABLE IF NOT EXISTS fund_master (
+CREATE TABLE dim_fund (
 
     amfi_code INTEGER PRIMARY KEY,
+
     fund_house TEXT,
+
     scheme_name TEXT,
+
     category TEXT,
+
     sub_category TEXT,
+
     plan TEXT,
-    launch_date TEXT,
+
     benchmark TEXT,
+
     expense_ratio_pct REAL,
-    exit_load_pct REAL,
-    min_sip_amount REAL,
-    min_lumpsum_amount REAL,
-    fund_manager TEXT,
+
     risk_category TEXT
+
 );
 
 
--- Create NAV History Table
+CREATE TABLE dim_date (
 
-CREATE TABLE IF NOT EXISTS nav_history (
+    date TEXT PRIMARY KEY,
+
+    year INTEGER,
+
+    month INTEGER,
+
+    quarter INTEGER
+
+);
+
+
+CREATE TABLE fact_nav (
 
     id INTEGER PRIMARY KEY AUTOINCREMENT,
+
     amfi_code INTEGER,
+
     date TEXT,
+
     nav REAL,
 
     FOREIGN KEY(amfi_code)
-    REFERENCES fund_master(amfi_code)
+    REFERENCES dim_fund(amfi_code)
 
 );
 
 
--- Create AUM Table
-
-CREATE TABLE IF NOT EXISTS aum (
+CREATE TABLE fact_transactions (
 
     id INTEGER PRIMARY KEY AUTOINCREMENT,
+
+    investor_id TEXT,
+
+    amfi_code INTEGER,
+
+    transaction_date TEXT,
+
+    transaction_type TEXT,
+
+    amount_inr REAL,
+
+    state TEXT,
+
+    city TEXT,
+
+    city_tier TEXT,
+
+    age_group TEXT,
+
+    gender TEXT,
+
+    kyc_status TEXT,
+
+    FOREIGN KEY(amfi_code)
+    REFERENCES dim_fund(amfi_code)
+
+);
+
+
+CREATE TABLE fact_performance (
+
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+
+    amfi_code INTEGER,
+
+    return_1yr REAL,
+
+    return_3yr REAL,
+
+    return_5yr REAL,
+
+    expense_ratio REAL,
+
+    FOREIGN KEY(amfi_code)
+    REFERENCES dim_fund(amfi_code)
+
+);
+
+
+CREATE TABLE fact_aum (
+
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+
     fund_house TEXT,
-    aum_value REAL,
-    date TEXT
 
-);
+    year INTEGER,
 
-
--- Create Benchmark Table
-
-CREATE TABLE IF NOT EXISTS benchmark_indices (
-
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    index_name TEXT,
-    date TEXT,
-    value REAL
+    aum_value REAL
 
 );

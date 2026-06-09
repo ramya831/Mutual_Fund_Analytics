@@ -1,6 +1,7 @@
 import pandas as pd
 
 fund_master = pd.read_csv("data/raw/01_fund_master.csv")
+print(fund_master.head())
 
 print("Fund Houses")
 print(fund_master["fund_house"].unique())

@@ -1,3 +1,4 @@
+print("Data ingestion script is working!")
 import pandas as pd
 import os
 

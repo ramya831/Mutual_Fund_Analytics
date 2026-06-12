@@ -1,37 +1,55 @@
+"""
+Fund Recommendation System
+
+Input:
+    Investor risk level (Low / Moderate / High)
+
+Output:
+    Top 3 mutual funds based on Sharpe Ratio
+"""
+
 import pandas as pd
 
 
-# Load files
+# Load datasets
 performance = pd.read_csv(
     "data/processed/scheme_performance_clean.csv"
 )
 
-fund = pd.read_csv(
+fund_master = pd.read_csv(
     "data/raw/01_fund_master.csv"
 )
 
 
-# Merge performance + fund details
-df = performance.merge(
-    fund[
-        [
-            "amfi_code",
-            "scheme_name",
-            "risk_category"
-        ]
-    ],
+# Select required columns
+fund_master = fund_master[
+    [
+        "amfi_code",
+        "scheme_name",
+        "risk_category"
+    ]
+]
+
+
+# Merge fund performance with fund details
+fund_data = performance.merge(
+    fund_master,
     on="amfi_code",
     how="inner"
 )
 
 
-def recommend(risk):
+def recommend_funds(risk_level):
+    """
+    Returns top 3 funds matching risk level
+    sorted by Sharpe Ratio
+    """
 
-    result = df[
-        df["risk_category"]
+    result = fund_data[
+        fund_data["risk_category"]
         .str.lower()
         ==
-        risk.lower()
+        risk_level.lower()
     ]
 
 
@@ -40,15 +58,13 @@ def recommend(risk):
         ascending=False
     )
 
-
     return result[
-        [
-            "scheme_name_x",
-            "risk_category",
-            "sharpe_ratio"
-        ]
-    ].head(3)
-
+    [
+        "scheme_name_x",
+        "risk_category",
+        "sharpe_ratio"
+    ]
+].head(3)
 
 
 # User input
@@ -57,7 +73,7 @@ risk = input(
 )
 
 
-recommendation = recommend(risk)
+recommendation = recommend_funds(risk)
 
 
 print("\nTop 3 Recommended Funds:")

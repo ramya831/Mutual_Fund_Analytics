@@ -1,72 +1,163 @@
-# Mutual Fund Analytics Capstone Project
+# 📊 Mutual Fund Analytics Project
 
-## Submitted To
-Bluestock Fintech
+## 📌 Project Overview
 
-## Prepared By
-Ungarala Ramya
+The **Mutual Fund Analytics Project** is a data analytics project that focuses on analyzing mutual fund data to generate meaningful financial insights.
 
-## Duration
-7-Day Capstone Project
+This project covers the complete analytics workflow including data collection, data cleaning, exploratory data analysis, SQL analysis, and dashboard development.
 
-## Project Overview
+The main goal is to understand mutual fund performance, risk factors, investment trends, and generate actionable insights through data visualization.
 
-This project focuses on analyzing mutual fund industry data to generate insights about:
+---
 
-- Fund performance
-- Investor behavior
-- SIP trends
-- Risk analysis
-- Portfolio diversification
-- Market trends
+## 🎯 Project Objectives
 
-## Technologies Used
+- Analyze mutual fund performance
+- Study fund returns and risk metrics
+- Identify investment trends
+- Compare different mutual fund categories
+- Perform data cleaning and transformation
+- Generate financial insights using analytics
+- Create interactive dashboards for visualization
+
+---
+
+## 🛠️ Technologies Used
 
 - Python
 - Pandas
 - NumPy
+- SQL
 - SQLite
 - Power BI
-- Matplotlib
+- Excel
+- Jupyter Notebook
+- Git & GitHub
 
-## Project Workflow
+---
 
-1. Data Collection
-2. Data Cleaning
-3. ETL Process
-4. Exploratory Data Analysis
-5. Performance Analytics
-6. Risk Analysis
-7. Power BI Dashboard Development
+## 📂 Project Structure
+Mutual_Fund_Analytics/
 
-## Key Metrics Calculated
+│
+├── data/
+│ ├── Raw datasets
+│ └── Cleaned datasets
+│
+├── notebooks/
+│ ├── Data Cleaning
+│ ├── Exploratory Data Analysis
+│ └── Performance Analysis
+│
+├── scripts/
+│ ├── Data processing scripts
+│ └── Analysis scripts
+│
+├── sql/
+│ ├── Database schema
+│ └── SQL queries
+│
+├── dashboard/
+│ └── Power BI Dashboard
+│
+├── reports/
+│ ├── Final Report
+│ └── Project Presentation
+│
+└── README.md
 
-- CAGR
-- Sharpe Ratio
-- Sortino Ratio
-- Alpha
-- Beta
-- Maximum Drawdown
-- VaR
-- CVaR
 
-## Dashboard Pages
+---
 
-1. Industry Overview
-2. Fund Performance Analytics
-3. Investor Analytics
-4. SIP and Market Trends
+## 🔄 Project Workflow
 
-## Files
+### 1. Data Collection
+Collected mutual fund related datasets for analysis.
 
-Final_Report.pdf - Complete project documentation
+### 2. Data Cleaning
+- Removed missing values
+- Handled duplicate records
+- Prepared clean datasets
 
-PowerBI_Dashboard.pbix - Interactive dashboard
+### 3. Data Processing
+Performed data transformation and preparation using Python.
 
-Python_Code - Analysis scripts
+### 4. Exploratory Data Analysis
+Analyzed:
 
-Dataset - Input datasets
+- Fund performance
+- Returns
+- Risk levels
+- Market trends
 
-## Conclusion
+### 5. SQL Analysis
 
-The project demonstrates the application of data analytics and business intelligence techniques for mutual fund analysis and investment insights.
+Created database tables and performed queries for extracting insights.
+
+### 6. Dashboard Development
+
+Built interactive Power BI dashboard to visualize important metrics.
+
+### 7. Insight Generation
+
+Generated meaningful conclusions from analyzed data.
+
+---
+
+## 📈 Analysis Performed
+
+The project includes:
+
+- Mutual fund return analysis
+- Risk and performance comparison
+- Fund category analysis
+- Investment trend analysis
+- Portfolio insights
+- Financial data visualization
+
+---
+
+## 📊 Dashboard
+
+An interactive Power BI dashboard was created to display:
+
+- Fund performance
+- Return comparison
+- Risk metrics
+- Category-wise analysis
+- Investment trends
+
+---
+
+## 📁 Dataset
+
+The dataset contains mutual fund information used for:
+
+- Data analysis
+- SQL queries
+- Visualization
+- Insight generation
+
+---
+
+## 🚀 Key Features
+
+✅ Complete data analytics pipeline  
+✅ Python-based data processing  
+✅ SQL database analysis  
+✅ Power BI visualization  
+✅ Financial insights generation  
+
+---
+
+## 👩‍💻 Author
+
+**Ungarala Ramya**
+
+B.Tech Computer Science and Engineering
+
+---
+
+## 📌 Project Status
+
+Completed ✅

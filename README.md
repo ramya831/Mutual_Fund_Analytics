@@ -37,36 +37,35 @@ The main goal is to understand mutual fund performance, risk factors, investment
 ---
 
 ## 📂 Project Structure
+
 Mutual_Fund_Analytics/
 
 │
 ├── data/
-│ ├── Raw datasets
-│ └── Cleaned datasets
+│   ├── Raw datasets
+│   └── Cleaned datasets
 │
 ├── notebooks/
-│ ├── Data Cleaning
-│ ├── Exploratory Data Analysis
-│ └── Performance Analysis
+│   ├── Data Cleaning
+│   ├── Exploratory Data Analysis
+│   └── Performance Analysis
 │
 ├── scripts/
-│ ├── Data processing scripts
-│ └── Analysis scripts
+│   ├── Data processing scripts
+│   └── Analysis scripts
 │
 ├── sql/
-│ ├── Database schema
-│ └── SQL queries
+│   ├── Database schema
+│   └── SQL queries
 │
 ├── dashboard/
-│ └── Power BI Dashboard
+│   └── Power BI Dashboard
 │
 ├── reports/
-│ ├── Final Report
-│ └── Project Presentation
+│   ├── Final Report
+│   └── Project Presentation
 │
 └── README.md
-
-
 ---
 
 ## 🔄 Project Workflow

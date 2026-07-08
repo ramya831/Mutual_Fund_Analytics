@@ -1,162 +1,308 @@
 # 📊 Mutual Fund Analytics Project
 
-## 📌 Project Overview
-
-The **Mutual Fund Analytics Project** is a data analytics project that focuses on analyzing mutual fund data to generate meaningful financial insights.
-
-This project covers the complete analytics workflow including data collection, data cleaning, exploratory data analysis, SQL analysis, and dashboard development.
-
-The main goal is to understand mutual fund performance, risk factors, investment trends, and generate actionable insights through data visualization.
+A complete end-to-end Mutual Fund Analytics project developed using **Python, SQL, SQLite, Power BI, and Streamlit**. The project analyzes mutual fund performance, risk, returns, investment trends, and portfolio optimization while providing interactive dashboards and advanced financial analytics.
 
 ---
 
-## 🎯 Project Objectives
+# 📌 Project Overview
+
+This project follows the complete data analytics lifecycle:
+
+- Data Collection
+- Data Cleaning
+- ETL Pipeline
+- Database Design
+- Exploratory Data Analysis (EDA)
+- Performance Analytics
+- Risk Analysis
+- Dashboard Development
+- Advanced Analytics
+- Report Generation
+
+The objective is to help investors understand mutual fund performance through data-driven insights and visualization.
+
+---
+
+# 🎯 Objectives
 
 - Analyze mutual fund performance
-- Study fund returns and risk metrics
-- Identify investment trends
-- Compare different mutual fund categories
-- Perform data cleaning and transformation
-- Generate financial insights using analytics
-- Create interactive dashboards for visualization
+- Study NAV movements
+- Compare mutual fund categories
+- Calculate financial performance metrics
+- Perform risk analysis
+- Build interactive dashboards
+- Generate investment insights
 
 ---
 
-## 🛠️ Technologies Used
+# 🛠 Technologies Used
 
-- Python
-- Pandas
-- NumPy
-- SQL
-- SQLite
-- Power BI
-- Excel
-- Jupyter Notebook
-- Git & GitHub
+| Technology | Purpose |
+|------------|---------|
+| Python | Data Analysis |
+| Pandas | Data Cleaning |
+| NumPy | Numerical Computing |
+| Matplotlib | Visualization |
+| SQLite | Database |
+| SQL | Data Queries |
+| Power BI | Dashboard |
+| Streamlit | Web Application |
+| Jupyter Notebook | Analysis |
+| Git & GitHub | Version Control |
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
 
+```
 Mutual_Fund_Analytics/
-
 │
 ├── data/
-│   ├── Raw datasets
-│   └── Cleaned datasets
+│   ├── raw/
+│   ├── processed/
+│   └── db/
 │
 ├── notebooks/
 │   ├── Data Cleaning
-│   ├── Exploratory Data Analysis
-│   └── Performance Analysis
+│   ├── EDA Analysis
+│   ├── Performance Analytics
+│   └── Advanced Analytics
 │
 ├── scripts/
-│   ├── Data processing scripts
-│   └── Analysis scripts
+│   ├── Monte Carlo Simulation
+│   ├── Markowitz Portfolio
+│   ├── Email Report
+│   └── Recommender
+│
+├── streamlit_app/
+│   └── Interactive Web Dashboard
 │
 ├── sql/
-│   ├── Database schema
-│   └── SQL queries
+│   ├── schema.sql
+│   └── queries.sql
 │
 ├── dashboard/
 │   └── Power BI Dashboard
 │
 ├── reports/
-│   ├── Final Report
-│   └── Project Presentation
+│   ├── Final_Report.pdf
+│   ├── Bluestock_MF_Presentation.pptx
+│   └── Charts
 │
 └── README.md
----
-
-## 🔄 Project Workflow
-
-### 1. Data Collection
-Collected mutual fund related datasets for analysis.
-
-### 2. Data Cleaning
-- Removed missing values
-- Handled duplicate records
-- Prepared clean datasets
-
-### 3. Data Processing
-Performed data transformation and preparation using Python.
-
-### 4. Exploratory Data Analysis
-Analyzed:
-
-- Fund performance
-- Returns
-- Risk levels
-- Market trends
-
-### 5. SQL Analysis
-
-Created database tables and performed queries for extracting insights.
-
-### 6. Dashboard Development
-
-Built interactive Power BI dashboard to visualize important metrics.
-
-### 7. Insight Generation
-
-Generated meaningful conclusions from analyzed data.
+```
 
 ---
 
-## 📈 Analysis Performed
+# 🔄 Project Workflow
+
+## 1️⃣ Data Collection
+
+Collected mutual fund datasets including:
+
+- NAV History
+- AUM
+- SIP Inflows
+- Fund Performance
+- Portfolio Holdings
+- Benchmark Indices
+
+---
+
+## 2️⃣ Data Cleaning
+
+Performed:
+
+- Missing value handling
+- Duplicate removal
+- Data formatting
+- Feature engineering
+
+---
+
+## 3️⃣ ETL Pipeline
+
+Developed automated ETL scripts to:
+
+- Load datasets
+- Clean data
+- Store processed files
+- Load into SQLite Database
+
+---
+
+## 4️⃣ Database Design
+
+Created relational SQLite database using SQL.
+
+Implemented:
+
+- Database Schema
+- SQL Queries
+- Data Loading
+
+---
+
+## 5️⃣ Exploratory Data Analysis
+
+Performed analysis on:
+
+- NAV Trends
+- AUM Growth
+- SIP Trends
+- Category Performance
+- Investor Transactions
+
+Generated multiple visualizations.
+
+---
+
+## 6️⃣ Performance Analytics
+
+Calculated:
+
+- Daily Returns
+- CAGR
+- Sharpe Ratio
+- Sortino Ratio
+- Alpha
+- Beta
+- Maximum Drawdown
+- Tracking Error
+- VaR
+- CVaR
+
+---
+
+## 7️⃣ Dashboard Development
+
+Built an interactive Power BI dashboard with:
+
+- Fund Performance
+- NAV Analysis
+- Risk Metrics
+- Category Comparison
+- Investor Insights
+
+---
+
+# 📊 Key Features
+
+- End-to-End Analytics Pipeline
+- SQLite Database
+- SQL Analysis
+- Python Automation
+- Interactive Power BI Dashboard
+- Streamlit Web Application
+- Risk Analysis
+- Portfolio Optimization
+- Financial Reporting
+
+---
+
+# 📈 Advanced Analytics
 
 The project includes:
 
-- Mutual fund return analysis
-- Risk and performance comparison
-- Fund category analysis
-- Investment trend analysis
-- Portfolio insights
-- Financial data visualization
+- Monte Carlo NAV Forecast
+- Markowitz Efficient Frontier
+- Portfolio Allocation
+- Mutual Fund Recommender
+- Risk Metrics
+- Performance Comparison
 
 ---
 
-## 📊 Dashboard
+# 🎁 Bonus Challenges Completed
 
-An interactive Power BI dashboard was created to display:
+✅ Streamlit Web Application
 
-- Fund performance
-- Return comparison
-- Risk metrics
-- Category-wise analysis
-- Investment trends
+✅ Monte Carlo Simulation (5-Year NAV Forecast)
 
----
+✅ Markowitz Efficient Frontier Portfolio Optimization
 
-## 📁 Dataset
-
-The dataset contains mutual fund information used for:
-
-- Data analysis
-- SQL queries
-- Visualization
-- Insight generation
+✅ Automated HTML Email Report Generator
 
 ---
 
-## 🚀 Key Features
+# 📷 Generated Outputs
 
-✅ Complete data analytics pipeline  
-✅ Python-based data processing  
-✅ SQL database analysis  
-✅ Power BI visualization  
-✅ Financial insights generation  
+The project generates:
+
+- Financial Reports
+- Charts
+- Portfolio Allocation
+- Efficient Frontier Graph
+- Monte Carlo Simulation Graph
+- Power BI Dashboard
+- Streamlit Dashboard
 
 ---
 
-## 👩‍💻 Author
+# 🚀 How to Run
+
+Clone the repository
+
+```bash
+git clone https://github.com/ramya831/Mutual_Fund_Analytics.git
+```
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Run Streamlit Dashboard
+
+```bash
+streamlit run streamlit_app/app.py
+```
+
+Run Monte Carlo Simulation
+
+```bash
+python scripts/monte_carlo.py
+```
+
+Run Portfolio Optimization
+
+```bash
+python scripts/markowitz_portfolio.py
+```
+
+---
+
+# 📊 Deliverables Completed
+
+| Deliverable | Status |
+|------------|--------|
+| ETL Pipeline | ✅ |
+| SQLite Database | ✅ |
+| EDA Analysis | ✅ |
+| Performance Analytics | ✅ |
+| Power BI Dashboard | ✅ |
+| Advanced Analytics | ✅ |
+| Final Report | ✅ |
+| Presentation | ✅ |
+
+---
+
+# 👩‍💻 Author
 
 **Ungarala Ramya**
 
-B.Tech Computer Science and Engineering
+B.Tech – Computer Science and Engineering
+
+Vignana Bharathi Institute of Technology
+
+GitHub:
+https://github.com/ramya831
 
 ---
 
-## 📌 Project Status
+# 📌 Project Status
 
-Completed ✅
+## ✅ Completed Successfully
+
+This project was developed as part of the **Bluestock Data Analyst Internship** and demonstrates end-to-end data analytics, financial analysis, dashboard development, and advanced portfolio analytics.
